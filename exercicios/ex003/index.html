@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+    <style>
+        body{
+            background-color: rgb(6, 33, 107);
+        }
+        h1{
+            font-size: 30pt;
+            color: aliceblue;
+        }
+        button{
+            font-size: 15pt;
+            padding: 25px 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados v1.0</h1>
+    <button onclick="cliqueMensagem()">Clique para começar</button>
+    <script>
+        function cliqueMensagem(){
+            var nome = prompt("Qual é o seu nome? ") // variável recebe o resultado do prompt
+            alert(`Olá ${nome}, é um prazer em te conhecer!`) // alert que mostra uma mensagem com a variável nome
+        }
+    </script>
+</body>
+</html>
