@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com Js</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+            background-color: #00008B  ;
+        }
+        p{
+            color: aliceblue;
+        }
+        h1{
+            color: aliceblue;
+        }
+        button{
+            font-size: 20px;
+            padding: 25px 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>trabalhando com números</h1>
+    <button  onclick="calcular()">Clique para calcular</button>
+    <p id="p">O resultado vem aqui...</p>
+    <script>
+        window.alert("Olá!, Seja bem-vindo ao meu site!")
+        function calcular(){
+            var num = prompt("Digite um número: ")
+            numdouble = num * 2
+            numdiv = num / 2
+            var p = document.getElementById('p')
+            p.innerText = `A metade de ${num} é ${numdiv} e o dobro é ${numdouble}!`
+        }
+    </script>
+</body>
+</html>
