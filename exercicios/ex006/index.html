@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com Js</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+            background-color: #00008B  ;
+        }
+        p{
+            color: aliceblue;
+        }
+        h1{
+            color: aliceblue;
+        }
+        button{
+            font-size: 20px;
+            padding: 25px 25px;
+        }
+        mark{
+            background-color: #0ecc34;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando dois números</h1>
+    <button  onclick="somar()">Clique para calcular</button>
+    <p id="p">O resultado vem aqui...</p>
+    <script>
+        window.alert("Seja bem-vindo ao meu site!")
+        function somar(){
+            var num1 = prompt("Digite um número: ")
+            var num2 = prompt("Digite outro número: ")
+            var soma = num1 + num2
+            var p = document.getElementById('p')
+            p.innerHTML = `<p>A Soma entre <mark>${num1}</mark> e <mark>${num2}</mark> é <strong>${soma}!</strong></p>`
+            
+        }
+    </script>
+</body>
+</html>
