@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com Js</title>
+    <style>
+        body{
+            background-color: rgb(9, 114, 206);
+            font: normal 18pt Arial;
+        }
+        button{
+            font-size: 25px;
+            padding: 25px 25px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <button onclick="calculo()">Clique para calcular</button>
+    <section id="res">O resultado vai aparecer aqui...</section>
+    <script>
+        function calculo(){
+            let num = Number(prompt("digite um número:")) 
+            let res = window.document.getElementById("res")
+            res.innerHTML = `<p>O número a ser analisado aqui será o <mark>${num}</mark></p><hr>`
+            res.innerHTML += `<p>O seu valor absoluto é <mark>${Math.abs(num)}</mark></p>` //Math.abs serve pra calcular o valor absoluto.
+            res.innerHTML += `<p>A valor inteira é <mark>${Math.trunc(num)}</mark></p>`  //Math.trunc serve pra calcular o valor inteiro.
+            res.innerHTML += `<p>A sua raiz quadrada é <mark>${Math.sqrt(num)}</mark></p>` //Math.sqrt serve pra calcular a raíz quadrada.
+            res.innerHTML += `<p>A sua raiz cúbica é <mark>${Math.cbrt(num)}</mark></p>` //Math.cbrt serve pra calcular a raíz cúbica.
+            res.innerHTML += `O valor de ${num}<sup>2</sup> é <mark>${Math.pow(num, 2)}</mark></p>` //Math pow serve para calcular a potência.
+            res.innerHTML += `O valor de ${num}<sup>3</sup> é <mark>${Math.pow(num, 3)}</mark></p>` 
+        }
+    </script>
+</body>
+</html>
