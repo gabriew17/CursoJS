@@ -1,0 +1,8 @@
+body{
+    font: normal 18pt Arial;
+}input{
+    font-size: 16px;
+    padding: 10px;
+}strong{
+    color: red;
+}
