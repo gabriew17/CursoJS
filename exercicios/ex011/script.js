@@ -10,7 +10,7 @@ function CalcularMedia(){
     res.innerHTML += (`<p>As notas obtidas foram <mark>${nota1} e ${nota2}</mark>.</p>`) 
     res.innerHTML += (`<p>A média final será <mark>${media}</mark>.</p>`)
     // Estrutura condicional para mostrar uma mensagem de acordo com as notas do aluno.
-    if (media > 6){
+    if (media >= 6){
     res.innerHTML += (`<p>A mensagem que temos é: <strong style="color: green;">${mensagemBoa}</strong>.</p>`)
 }else {
      res.innerHTML += (`<p>A mensagem que temos é: <strong style="color: red;">${mensagemRuim}</strong>.</p>`)
